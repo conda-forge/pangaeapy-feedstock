@@ -1,5 +1,5 @@
 {% set name = "pangaeapy" %}
-{% set version = "1.0.14" %}
+{% set version = "1.0.16" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pangaeapy-{{ version }}.tar.gz
-  sha256: a052367a58e990fea90f3f156a8490fb2caa224c2e907b02ed8cc0d502e72213
+  sha256: 2598df729768b57eee18cb14fd1a1994dd1ed31738a863bf25d4b85d9a150b6a
 
 build:
   noarch: python

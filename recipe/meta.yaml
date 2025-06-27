@@ -1,5 +1,5 @@
 {% set name = "pangaeapy" %}
-{% set version = "1.0.22" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pangaeapy-{{ version }}.tar.gz
-  sha256: a4a2851f9028b3449e2c894ceb560464741b09b2ea729cb770894b809d463691
+  sha256: 3c4b8014869e5060d576e9c8076b85a34d787a67c06afdd6cc06fbfe8365f6b4
 
 build:
   noarch: python
@@ -20,13 +20,14 @@ requirements:
     - setuptools
     - pip
   run:
+    - aiohttp >=3.11.0
     - python >={{ python_min }}
     - cftime >=1.6.3
     - lxml >=4.9.3
     - requests >=2.26.0
-    - pandas >=2.0.3
-    - numpy >=2.0.0
-    - netcdf4 >=1.7.2
+    - pandas >=2.2.2
+    - numpy >=1.24.4
+    - netcdf4 >1.6.5
 
 test:
   imports:

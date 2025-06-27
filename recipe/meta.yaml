@@ -1,3 +1,5 @@
+{% set python_min = "3.10" %}
+
 {% set name = "pangaeapy" %}
 {% set version = "1.1.0" %}
 

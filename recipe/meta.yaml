@@ -44,7 +44,7 @@ about:
   home: https://github.com/pangaea-data-publisher/pangaeapy
   summary: PANGAEA Python Client
   license: GPL-3.0-or-later
-  license_file: LICENSE.md
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:

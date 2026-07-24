@@ -1,7 +1,7 @@
 {% set python_min = "3.10" %}
 
 {% set name = "pangaeapy" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pangaeapy-{{ version }}.tar.gz
-  sha256: 3c4b8014869e5060d576e9c8076b85a34d787a67c06afdd6cc06fbfe8365f6b4
+  sha256: 70d2f95ef4e0c79838c21e1af60498ca2ebccab7347bb594e8c675d2560ee067
 
 build:
   noarch: python
@@ -22,6 +22,7 @@ requirements:
     - setuptools
     - pip
   run:
+    - jmespath >=1.0.0
     - aiohttp >=3.11.0
     - python >={{ python_min }}
     - cftime >=1.6.3

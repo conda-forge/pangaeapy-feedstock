@@ -3,11 +3,15 @@ About pangaeapy-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pangaeapy-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/pangaea-data-publisher/pangaeapy
+Home: https://www.pangaea.de/
 
 Package license: GPL-3.0-or-later
 
-Summary: PANGAEA Python Client
+Summary: Download and analyse (meta-)data of PANGAEA datasets
+
+Development: https://github.com/pangaea-data-publisher/pangaeapy
+
+Documentation: https://pangaea-data-publisher.github.io/pangaeapy/
 
 Current build status
 ====================
@@ -40,31 +44,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `pangaeapy` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install pangaeapy
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install pangaeapy
 ```
 
-It is possible to list all of the versions of `pangaeapy` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add pangaeapy
+# for installing globally
+pixi global install pangaeapy
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `pangaeapy` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search pangaeapy --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search pangaeapy --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search pangaeapy --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -76,6 +122,8 @@ mamba repoquery whoneeds pangaeapy --channel conda-forge
 # List dependencies of `pangaeapy`:
 mamba repoquery depends pangaeapy --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge

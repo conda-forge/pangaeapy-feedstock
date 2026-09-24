@@ -3,11 +3,15 @@ About pangaeapy-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pangaeapy-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/pangaea-data-publisher/pangaeapy
+Home: https://www.pangaea.de/
 
 Package license: GPL-3.0-or-later
 
-Summary: PANGAEA Python Client
+Summary: Download and analyse (meta-)data of PANGAEA datasets
+
+Development: https://github.com/pangaea-data-publisher/pangaeapy
+
+Documentation: https://pangaea-data-publisher.github.io/pangaeapy/
 
 Current build status
 ====================
